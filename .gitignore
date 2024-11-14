@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio Code.
+################################################################################
+
+/api/node_modules
+/api/package-lock.json
+/client/node_modules
+/client/package-lock.json
+/socket/node_modules
+/socket/package-lock.json
+

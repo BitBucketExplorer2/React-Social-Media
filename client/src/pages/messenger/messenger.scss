@@ -1,0 +1,97 @@
+.messenger {
+    height: calc(100vh - 70px);
+    display: flex;
+
+    .chatMenu {
+        flex: 3.5;
+
+        .wraper {
+
+
+            .top {
+                .searchInput {
+                    width: 97%;
+                    padding: 10px 5px;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                    height: 20px;
+                    background-color: rgba(224, 222, 222, 0.966);
+                    border-radius: 3px;
+
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .convContainer {
+                height: calc(100% - 40px);
+                overflow-y: scroll;
+                margin-bottom: 10px;
+            }
+
+
+
+
+        }
+    }
+
+    .chatBox {
+        flex: 6;
+
+        .wraper {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .top {
+                height: 100%;
+                overflow-y: scroll;
+                padding-right: 10px;
+            }
+
+            .noCoversation {
+                position: absolute;
+                top: 10%;
+                font-size: 90px;
+                color: rgb(233, 233, 233);
+                cursor: default;
+            }
+
+            .bottom {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+
+                .textMsg {
+                    width: 80%;
+                    height: 40px;
+                    padding: 10px;
+                }
+
+                .sendBtn {
+                    width: 70px;
+                    height: 35px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    background-color: rgba(28, 106, 158, 0.822);
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .chatOnlineBox {
+        flex: 2.5;
+    }
+
+    .wraper {
+        padding: 10px;
+        height: 100%;
+    }
+}

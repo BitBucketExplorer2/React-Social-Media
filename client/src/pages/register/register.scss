@@ -1,0 +1,99 @@
+.register {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wraper {
+        width: 70%;
+        height: 70%;
+        display: flex;
+
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 0 30px;
+
+            .logo {
+                font-size: 50px;
+                font-weight: 800;
+                color: #1775ee;
+                margin-bottom: 10px;
+            }
+
+            .desc {
+                font-size: 24px;
+            }
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .loginBox {
+                height: 400px;
+                padding: 30px;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .loginInput {
+                    height: 50px;
+                    outline: 0;
+                    border: none;
+                    padding-left: 15px;
+                    font-size: 18px;
+                    border-radius: 5px;
+
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+
+                    border-bottom: 1px solid gray;
+                }
+
+                .loginBtn {
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    background-color: #1775ee;
+                    color: white;
+                    font-size: 22px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+
+                .register {
+                    height: 50px;
+                    width: 60%;
+                    align-self: center;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    background-color: #42b72a;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+
+                .fogot {
+                    text-align: center;
+                    color: #1775ee;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
